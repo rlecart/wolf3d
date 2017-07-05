@@ -6,7 +6,7 @@
 #    By: rlecart <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/29 00:43:30 by rlecart           #+#    #+#              #
-#    Updated: 2017/07/05 06:59:46 by rlecart          ###   ########.fr        #
+#    Updated: 2017/07/06 00:11:08 by rlecart          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,9 @@ PROJECT		=	WOLF3D
 NAME		=	wolf3d
 BINDIR		=	bin/
 SRCDIR		=	src/
-SRC			=	main.c
+SRC			=	main.c \
+				init.c \
+				menu.c
 MINILIBX	=	minilibx_macos/libmlx.a
 LIBFT		=	libft/libft.a
 GRAPHICS	=	graphics/graphics.a
