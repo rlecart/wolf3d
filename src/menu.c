@@ -6,57 +6,65 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 00:03:29 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 01:23:20 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/06 20:38:10 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <wolf3d.h>
 
+void	quit(t_wolf *e)
+{
+	int				x[2];
+	int				y[2];
+
+	x[0] = 1920 / 2 - 519 / 2;
+	y[0] = 1080 / 2 - 657 / 2;
+	x[1] = 1920 / 2 - 450 / 2;
+	y[1] = 1080 / 2 - 657 / 2;
+	mlx_put_image_to_window(MLX, MENU.win, MENU.sure, 0, 0);
+	if (!MENU.bol)
+		mlx_put_image_to_window(MLX, MENU.win, MENU.quit1, x[0], y[0]);
+	else
+		mlx_put_image_to_window(MLX, MENU.win, MENU.quit2, x[1], y[1]);
+	MENU.bol = (!MENU.bol) ? 1 : 0;
+}
+
 void	display_menu_classic(t_wolf *e)
 {
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.bg, 0, 0);
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.solo1, 165, 382);
-	if (e->menu.buttons.isload < 0)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.load1, 165, 449);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.bg, 0, 0);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.but.solo1, 165, 382);
+	if (!MENU.but.isload)
+		mlx_put_image_to_window(MLX, MENU.win, MENU.but.load1, 165, 449);
 	else
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.load2, 165, 449);
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.multi1, 165, 516);
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.options1, 165, 582);
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.credits1, 165, 649);
-	mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.exit1, 165, 715);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.but.load2, 165, 449);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.but.multi1, 165, 516);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.but.options1, 165, 582);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.but.credits1, 165, 649);
+	mlx_put_image_to_window(MLX, MENU.win, MENU.but.exit1, 165, 715);
 }
 
-int		key_menu_hook(int key, t_wolf *e)
+void	display_desc(int x, int y, t_wolf *e)
 {
-	if (key == ESC)
-		exit(0);
-	if (key == SPACE)
-		e->menu.buttons.isload *= -1;
-	display_menu_classic(e);
-	return (1);
-}
-
-int		mouse_motion_hook_menu(int x, int y, t_wolf *e)
-{
-	display_menu_classic(e);
 	if (x >= 165 && y >= 382 && x <= 613 && y <= 463)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.solo2, 165, 382);
-	else if (e->menu.buttons.isload == 1 && x >= 165 && y >= 464 && x <= 613 && y <= 530)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.load3, 165, 449);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.solo, 165, 884);
+	else if (MENU.but.isload && x >= 165 && y >= 464 && x <= 613 && y <= 530)
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.load, 165, 884);
 	else if (x >= 165 && y >= 531 && x <= 613 && y <= 598)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.multi2, 165, 516);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.multi, 165, 884);
 	else if (x >= 165 && y >= 599 && x <= 613 && y <= 666)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.options2, 165, 582);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.options, 165, 884);
 	else if (x >= 165 && y >= 667 && x <= 613 && y <= 734)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.credits2, 165, 649);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.credits, 165, 884);
 	else if (x >= 165 && y >= 735 && x <= 613 && y <= 802)
-		mlx_put_image_to_window(e->mlx, e->menu.win, e->menu.buttons.exit2, 165, 715);
-	return (1);
+		mlx_put_image_to_window(MLX, MENU.win, MENU.desc.exit, 165, 884);
 }
 
 void	menu(t_wolf *e)
 {
-	mlx_key_hook(e->menu.win, key_menu_hook, e);
-	mlx_hook(e->menu.win, 6, (1L << 6), mouse_motion_hook_menu, e);
+	destroy_windows(e);
+	MENU.win = mlx_new_window(MLX, 1920, 1080, "Wolf3D - Menu");
+	mlx_key_hook(MENU.win, key_menu_hook, e);
+	mlx_mouse_hook(MENU.win, mouse_menu_hook, e);
+	mlx_hook(MENU.win, 6, (1L << 6), mouse_motion_hook_menu, e);
 	display_menu_classic(e);
 }

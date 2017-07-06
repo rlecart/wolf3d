@@ -6,7 +6,7 @@
 #    By: rlecart <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/29 00:43:30 by rlecart           #+#    #+#              #
-#    Updated: 2017/07/06 00:11:08 by rlecart          ###   ########.fr        #
+#    Updated: 2017/07/06 19:05:45 by rlecart          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,13 @@ BINDIR		=	bin/
 SRCDIR		=	src/
 SRC			=	main.c \
 				init.c \
-				menu.c
+				menu.c \
+				menu_hook.c \
+				solo.c \
+				load.c \
+				multi.c \
+				options.c \
+				credits.c
 MINILIBX	=	minilibx_macos/libmlx.a
 LIBFT		=	libft/libft.a
 GRAPHICS	=	graphics/graphics.a
