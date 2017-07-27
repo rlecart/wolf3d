@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 18:55:35 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 20:40:24 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 22:28:54 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,23 +38,23 @@ int		mouse_motion_hook_menu(int x, int y, t_wolf *e)
 	{
 		display_menu_classic(e);
 		if (x >= 165 && y >= 382 && x <= 613 && y <= 463)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.solo2, 165, 382);
 		else if (MENU.but.isload
 				&& x >= 165 && y >= 464 && x <= 613 && y <= 530)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.load3, 165, 449);
 		else if (x >= 165 && y >= 531 && x <= 613 && y <= 598)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.multi2, 165, 516);
 		else if (x >= 165 && y >= 599 && x <= 613 && y <= 666)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.options2, 165, 582);
 		else if (x >= 165 && y >= 667 && x <= 613 && y <= 734)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.credits2, 165, 649);
 		else if (x >= 165 && y >= 735 && x <= 613 && y <= 802)
-			mlx_put_image_to_window(MLX, MENU.win,
+			draw_texture(e->framebuffer->sdl_renderer,
 					MENU.but.exit2, 165, 715);
 		display_desc(x, y, e);
 	}

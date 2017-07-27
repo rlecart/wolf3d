@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/05 07:00:43 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/27 21:50:18 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 22:26:27 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,12 +119,15 @@ struct				s_wolf
 int					init(t_wolf *e);
 void				error(char *str);
 
-void				new_sdl_display(t_wolf *e, const char *title, int width, int height);
+void				new_sdl_display(t_wolf *e, const char *title,
+						int width, int height);
 void				sdl_loop(t_wolf *e, int (*loop)(t_wolf *));
 t_bitmap			*new_bitmap(t_wolf *e, int width, int height);
 void				bitmap_draw_pix(t_bitmap *b, int x, int y, int color);
 void				bitmap_update(t_bitmap *b);
 void				clear_bitmap(t_bitmap *b);
+void				draw_texture(SDL_Renderer *rend, SDL_Texture *img,
+						int x, int y);
 
 int					key_menu_hook(int key, t_wolf *e);
 int					mouse_motion_hook_menu(int x, int y, t_wolf *e);

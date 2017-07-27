@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 16:08:15 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 20:42:20 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 22:29:51 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,5 @@ int		key_multi_hook(int key, t_wolf *e)
 
 void	multi(t_wolf *e)
 {
-	destroy_windows(e);
-	MULTI.win = mlx_new_window(MLX, 1920, 1080, "Wolf3D - Multi");
-	mlx_key_hook(MULTI.win, key_multi_hook, e);
+	e += 0;
 }

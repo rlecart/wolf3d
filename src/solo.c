@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 16:08:36 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/26 19:49:32 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 22:29:44 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,5 @@ int		key_solo_hook(int key, t_wolf *e)
 
 void	solo(t_wolf *e)
 {
-	destroy_windows(e);
-	SOLO.win = mlx_new_window(MLX, 1920, 1080, "Wolf3D - Solo");
-	mlx_key_hook(SOLO.win, key_solo_hook, e);
+	e += 0;
 }

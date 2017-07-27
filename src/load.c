@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 16:08:08 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 20:42:10 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 22:30:01 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,5 @@ int		key_load_hook(int key, t_wolf *e)
 
 void	load(t_wolf *e)
 {
-	destroy_windows(e);
-	LOAD.win = mlx_new_window(MLX, 1920, 1080, "Wolf3D - Load");
-	mlx_key_hook(LOAD.win, key_load_hook, e);
+	e += 0;
 }
