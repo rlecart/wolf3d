@@ -6,7 +6,7 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/06 00:03:29 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 20:38:10 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 21:50:16 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,5 @@ void	display_desc(int x, int y, t_wolf *e)
 
 void	menu(t_wolf *e)
 {
-	destroy_windows(e);
-	MENU.win = mlx_new_window(MLX, 1920, 1080, "Wolf3D - Menu");
-	mlx_key_hook(MENU.win, key_menu_hook, e);
-	mlx_mouse_hook(MENU.win, mouse_menu_hook, e);
-	mlx_hook(MENU.win, 6, (1L << 6), mouse_motion_hook_menu, e);
 	display_menu_classic(e);
 }

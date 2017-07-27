@@ -6,19 +6,24 @@
 /*   By: rlecart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/05 06:59:58 by rlecart           #+#    #+#             */
-/*   Updated: 2017/07/06 20:38:13 by rlecart          ###   ########.fr       */
+/*   Updated: 2017/07/27 20:37:21 by rlecart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <wolf3d.h>
 
+int		loop(t_wolf *e)
+{
+	printf("BONJOUR\n");
+	return (0);
+}
+
 int		main(void)
 {
 	t_wolf		e;
 
-	if ((init(&e)))
-		exit(-1);
+	init(&e);
 	menu(&e);
-	mlx_loop(e.mlx);
+	sdl_loop(&e, &loop);
 	return (0);
 }
