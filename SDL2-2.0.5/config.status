@@ -437,8 +437,8 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5'
-srcdir='/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5'
+ac_pwd='/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5'
+srcdir='/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5'
 INSTALL='/usr/bin/install -c'
 AWK='awk'
 test -n "$AWK" || AWK=awk
@@ -598,7 +598,7 @@ old_postuninstall_cmds=''
 old_archive_cmds='$AR $AR_FLAGS $oldlib$oldobjs~$RANLIB $tool_oldlib'
 lock_old_archive_extraction='yes'
 CC='gcc'
-CFLAGS='-g -O2 -Iinclude -I/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/include '
+CFLAGS='-g -O2 -Iinclude -I/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/include '
 compiler='g++'
 GCC='yes'
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
@@ -876,8 +876,8 @@ S["WAYLAND_SCANNER"]=""
 S["EXTRA_LDFLAGS"]=" -lm -liconv  -Wl,-framework,CoreAudio -Wl,-framework,AudioToolbox -Wl,-framework,ForceFeedback -lobjc -Wl,-framework,CoreVideo -Wl,-framework,Cocoa"\
 " -Wl,-framework,Carbon -Wl,-framework,IOKit"
 S["BUILD_LDFLAGS"]=""
-S["EXTRA_CFLAGS"]="-Iinclude -I/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/include  -mmmx -m3dnow -msse -msse2 -Wall -DTARGET_API_MAC_CARBON -DTARGET_API_MAC_OSX "\
-"-fvisibility=hidden -Wdeclaration-after-statement -Werror=declaration-after-statement -D_THREAD_SAFE -fpascal-strings"
+S["EXTRA_CFLAGS"]="-Iinclude -I/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/include  -mmmx -m3dnow -msse -msse2 -Wall -DTARGET_API_MAC_CARBON -DTARGET_API_MAC_"\
+"OSX -fvisibility=hidden -Wdeclaration-after-statement -Werror=declaration-after-statement -D_THREAD_SAFE -fpascal-strings"
 S["BUILD_CFLAGS"]="-g -O3 -DUSING_GENERATED_CONFIG_H"
 S["SDLTEST_OBJECTS"]="$(objects)/SDL_test_assert.o $(objects)/SDL_test_common.o $(objects)/SDL_test_compare.o $(objects)/SDL_test_crc32.o $(objects)/SDL_test_font.o $(obj"\
 "ects)/SDL_test_fuzzer.o $(objects)/SDL_test_harness.o $(objects)/SDL_test_imageBlit.o $(objects)/SDL_test_imageBlitBlend.o $(objects)/SDL_test_image"\
@@ -909,7 +909,7 @@ S["OBJECTS"]="$(objects)/SDL.lo $(objects)/SDL_assert.lo $(objects)/SDL_error.lo
 "$(objects)/SDL_cocoawindow.lo $(objects)/SDL_systhread.lo $(objects)/SDL_syssem.lo $(objects)/SDL_sysmutex.lo $(objects)/SDL_syscond.lo $(objects)/S"\
 "DL_systls.lo $(objects)/SDL_coreaudio.lo $(objects)/SDL_sysjoystick.lo $(objects)/SDL_syshaptic.lo $(objects)/SDL_syspower.lo $(objects)/SDL_sysfile"\
 "system.lo $(objects)/SDL_systimer.lo $(objects)/SDL_rwopsbundlesupport.lo"
-S["INCLUDE"]="-Iinclude -I/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/include"
+S["INCLUDE"]="-Iinclude -I/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/include"
 S["ac_aux_dir"]="build-scripts"
 S["ENABLE_STATIC_FALSE"]="#"
 S["ENABLE_STATIC_TRUE"]=""
@@ -973,9 +973,9 @@ S["SED"]="/usr/bin/sed"
 S["OBJEXT"]="o"
 S["EXEEXT"]=""
 S["ac_ct_CC"]="gcc"
-S["CPPFLAGS"]=" -Iinclude -I/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/include "
+S["CPPFLAGS"]=" -Iinclude -I/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/include "
 S["LDFLAGS"]=" "
-S["CFLAGS"]="-g -O2 -Iinclude -I/Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/include "
+S["CFLAGS"]="-g -O2 -Iinclude -I/Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/include "
 S["CC"]="gcc"
 S["host_os"]="darwin16.6.0"
 S["host_vendor"]="apple"

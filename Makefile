@@ -6,7 +6,7 @@
 #    By: rlecart <rlecart@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/29 00:43:30 by rlecart           #+#    #+#              #
-#    Updated: 2017/07/27 22:19:56 by rlecart          ###   ########.fr        #
+#    Updated: 2017/07/27 22:55:19 by mploux           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ SRC			=	main.c \
 				credits.c \
 				display.c \
 				texture.c \
+				error.c \
 				bitmap.c
 
 MINILIBX	=	minilibx_macos/libmlx.a

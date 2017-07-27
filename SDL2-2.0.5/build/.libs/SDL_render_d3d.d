@@ -1,8 +1,8 @@
 build/SDL_render_d3d.lo: \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/render/direct3d/SDL_render_d3d.c \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/render/direct3d/../../SDL_internal.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/render/direct3d/../../dynapi/SDL_dynapi.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/render/direct3d/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/render/direct3d/SDL_render_d3d.c \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/render/direct3d/../../SDL_internal.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/render/direct3d/../../dynapi/SDL_dynapi.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/render/direct3d/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h include/begin_code.h \
   include/close_code.h include/SDL_render.h include/SDL_stdinc.h \
   include/SDL_rect.h include/SDL_error.h include/SDL_pixels.h \

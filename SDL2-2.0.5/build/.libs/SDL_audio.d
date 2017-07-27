@@ -1,8 +1,8 @@
 build/SDL_audio.lo: \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/SDL_audio.c \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../SDL_internal.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../dynapi/SDL_dynapi.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../dynapi/SDL_dynapi_overrides.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/SDL_audio.c \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../SDL_internal.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../dynapi/SDL_dynapi.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h include/begin_code.h \
   include/close_code.h include/SDL.h include/SDL_main.h \
   include/SDL_stdinc.h include/SDL_assert.h include/SDL_atomic.h \
@@ -18,9 +18,9 @@ build/SDL_audio.lo: \
   include/SDL_log.h include/SDL_messagebox.h include/SDL_power.h \
   include/SDL_render.h include/SDL_system.h include/SDL_timer.h \
   include/SDL_version.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/SDL_audio_c.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/SDL_sysaudio.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../thread/SDL_systhread.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../thread/SDL_thread_c.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../thread/pthread/SDL_systhread_c.h \
-  /Users/rlecart/Desktop/TRAVAIL/wolf3d/SDL2-2.0.5/src/audio/../thread/../SDL_error_c.h
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/SDL_audio_c.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/SDL_sysaudio.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../thread/SDL_systhread.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../thread/SDL_thread_c.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../thread/pthread/SDL_systhread_c.h \
+  /Users/mploux/Desktop/perso/github/wolf3d/SDL2-2.0.5/src/audio/../thread/../SDL_error_c.h
