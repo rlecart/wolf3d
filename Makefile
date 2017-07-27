@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rlecart <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: rlecart <rlecart@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/29 00:43:30 by rlecart           #+#    #+#              #
-#    Updated: 2017/07/27 20:52:11 by rlecart          ###   ########.fr        #
+#    Updated: 2017/07/27 22:17:57 by mploux           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,9 @@ SRC			=	main.c \
 				options.c \
 				credits.c \
 				display.c \
+				texture.c \
 				bitmap.c
+
 MINILIBX	=	minilibx_macos/libmlx.a
 SDL			=	SDL2-2.0.5/build/.libs/libSDL2.a
 LIBFT		=	libft/libft.a
